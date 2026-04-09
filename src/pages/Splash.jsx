@@ -15,12 +15,12 @@ export default function Splash() {
   }, [navigate]);
 
   return (
-    <div className="flex flex-col h-full animate-fade-in" style={{ backgroundColor: '#f0f6fc', minHeight: '100vh' }}>
-      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div className="flex flex-col animate-fade-in" style={{ backgroundColor: '#f0f6fc', height: '100vh', overflow: 'hidden' }}>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '24px', backgroundColor: '#f0f6fc' }}>
         <img 
           src="/milk.png" 
           alt="Fresh Milk" 
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ width: '100%', maxWidth: '320px', maxHeight: '320px', objectFit: 'cover', borderRadius: '32px', boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }}
         />
       </div>
       <div style={{ padding: '40px 30px', backgroundColor: '#f6f9fc', flex: '0.8', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

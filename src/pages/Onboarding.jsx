@@ -7,19 +7,22 @@ export default function Onboarding() {
   const [slide] = useState(0);
 
   return (
-    <div className="flex flex-col h-full animate-fade-in" style={{ backgroundColor: '#f6f9fc', minHeight: '100vh', padding: '24px' }}>
+    <div className="flex flex-col animate-fade-in" style={{ backgroundColor: '#f6f9fc', height: '100vh', overflow: 'hidden', padding: '24px' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end', paddingTop: '16px', marginBottom: '24px' }}>
         <button className="text-primary font-bold" onClick={() => navigate('/login')}>Skip</button>
       </div>
 
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <div style={{ 
-            width: '100%', 
+            width: '100%',
+            maxWidth: '320px',
+            margin: '0 auto',
             aspectRatio: '1', 
             borderRadius: '24px', 
             overflow: 'hidden', 
             marginBottom: '40px',
-            backgroundColor: '#0a3622'
+            backgroundColor: '#0a3622',
+            boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1)'
         }}>
           <img 
             src="/milk.png" 
@@ -45,7 +48,7 @@ export default function Onboarding() {
 
         <button 
           className="btn-primary" 
-          style={{ marginTop: '40px', marginBottom: '16px' }}
+          style={{ alignSelf: 'flex-start', marginTop: '40px', marginBottom: '16px' }}
           onClick={() => navigate('/login')}
         >
           Next <ArrowRight size={20} />

@@ -50,13 +50,15 @@ export default function Home() {
               <span>2L Full Cream Milk, 500g Fresh Curd</span>
             </div>
             
-            <button 
-              className="btn-primary w-full shadow-sm" 
-              style={{ padding: '12px', borderRadius: '12px' }}
-              onClick={() => navigate('/subscription')}
-            >
-              Modify Delivery
-            </button>
+            <div style={{ textAlign: 'left' }}>
+              <button 
+                className="btn-primary shadow-sm" 
+                style={{ padding: '12px 24px', borderRadius: '12px' }}
+                onClick={() => navigate('/subscription')}
+              >
+                Modify Delivery
+              </button>
+            </div>
           </div>
         </div>
 
@@ -152,7 +154,7 @@ export default function Home() {
               <p className="text-xs text-gray font-medium" style={{ marginBottom: '4px' }}>Fresh Dairy</p>
               <h4 className="font-bold text-sm" style={{ marginBottom: '12px' }}>Soft Malai Paneer</h4>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-primary">$4.50</span>
+                <span className="font-bold text-primary">₹4.50</span>
                 <button style={{ backgroundColor: '#f0f6fc', padding: '6px', borderRadius: '8px', color: '#4fa6fd' }}>
                   <Plus size={16} />
                 </button>
@@ -169,7 +171,7 @@ export default function Home() {
               <p className="text-xs text-gray font-medium" style={{ marginBottom: '4px' }}>Artisanal</p>
               <h4 className="font-bold text-sm" style={{ marginBottom: '12px' }}>Salted Cow Butter</h4>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-primary">$3.20</span>
+                <span className="font-bold text-primary">₹3.20</span>
                 <button style={{ backgroundColor: '#f0f6fc', padding: '6px', borderRadius: '8px', color: '#4fa6fd' }}>
                   <Plus size={16} />
                 </button>

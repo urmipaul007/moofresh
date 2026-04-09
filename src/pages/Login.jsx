@@ -5,7 +5,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col h-full animate-fade-in" style={{ backgroundColor: '#f6f9fc', minHeight: '100vh', padding: '24px' }}>
+    <div className="flex flex-col animate-fade-in" style={{ backgroundColor: '#f6f9fc', height: '100vh', overflow: 'hidden', padding: '24px' }}>
       
       {/* Header */}
       <div className="flex items-center" style={{ paddingTop: '16px', marginBottom: '32px', position: 'relative' }}>
@@ -50,9 +50,9 @@ export default function Login() {
 
         {/* Send OTP Button */}
         <button 
-          className="btn-primary w-full shadow-sm" 
+          className="btn-primary shadow-sm" 
           onClick={() => navigate('/home')}
-          style={{ padding: '16px', borderRadius: '12px', fontSize: '15px', marginBottom: '24px' }}
+          style={{ alignSelf: 'flex-start', padding: '12px 32px', borderRadius: '12px', fontSize: '15px', marginBottom: '24px' }}
         >
           Send OTP
         </button>
@@ -66,9 +66,9 @@ export default function Login() {
 
         {/* Google Button */}
         <button 
-          className="w-full flex justify-center items-center font-bold" 
+          className="flex justify-center items-center font-bold" 
           onClick={() => navigate('/home')}
-          style={{ border: '1px solid #e2e8f0', borderRadius: '12px', padding: '14px', backgroundColor: 'transparent', color: '#111d35', gap: '12px' }}
+          style={{ alignSelf: 'flex-start', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '12px 32px', backgroundColor: 'transparent', color: '#111d35', gap: '12px' }}
         >
           <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
             <g transform="matrix(1, 0, 0, 1, 27.009001, -39.238998)">

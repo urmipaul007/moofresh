@@ -147,7 +147,7 @@ export default function Subscription() {
              <p className="text-xs" style={{ color: '#9ca3af' }}>Pure, organic, glass bottled</p>
           </div>
           <div className="text-right">
-             <span className="text-primary font-bold block" style={{ marginBottom: '2px' }}>$4.50</span>
+             <span className="text-primary font-bold block" style={{ marginBottom: '2px' }}>₹4.50</span>
              <span className="text-xs" style={{ color: '#9ca3af' }}>per delivery</span>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function Subscription() {
       </div>
 
       {/* Footer Fixed */}
-      <div style={{ position: 'fixed', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: '480px', backgroundColor: 'white', borderTop: '1px solid #f1f5f9', padding: '16px 24px', zIndex: 50, paddingBottom: 'calc(16px + env(safe-area-inset-bottom))' }}>
+      <div className="sticky-footer" style={{ borderTop: '1px solid #f1f5f9', padding: '16px 24px', zIndex: 50, paddingBottom: 'calc(16px + env(safe-area-inset-bottom))' }}>
         <div className="flex justify-between items-end" style={{ marginBottom: '16px' }}>
           <div>
             <p className="text-xs text-gray font-medium" style={{ marginBottom: '4px' }}>Starting from</p>
@@ -163,16 +163,18 @@ export default function Subscription() {
           </div>
           <div className="text-right">
              <p className="text-xs text-gray font-medium" style={{ marginBottom: '4px' }}>Monthly Est.</p>
-             <p className="font-bold text-lg" style={{ color: '#0f172a' }}>$135.00</p>
+             <p className="font-bold text-lg" style={{ color: '#0f172a' }}>₹135.00</p>
           </div>
         </div>
-        <button 
-          className="btn-primary w-full"
-          onClick={() => navigate('/home')}
-          style={{ padding: '16px', borderRadius: '12px', fontSize: '15px' }}
-        >
-          Confirm Subscription
-        </button>
+        <div style={{ textAlign: 'left' }}>
+          <button 
+            className="btn-primary"
+            onClick={() => navigate('/home')}
+            style={{ padding: '16px 32px', borderRadius: '12px', fontSize: '15px' }}
+          >
+            Confirm Subscription
+          </button>
+        </div>
       </div>
 
     </div>

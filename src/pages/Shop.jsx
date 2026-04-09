@@ -51,7 +51,7 @@ export default function Shop() {
         </div>
 
         {/* Product Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', paddingBottom: '24px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px', paddingBottom: '24px' }}>
            {/* Item 1 */}
            <div style={{ backgroundColor: 'white', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--surface-shadow)' }}>
              <div style={{ position: 'relative' }}>
@@ -63,7 +63,7 @@ export default function Shop() {
                <p className="text-xs text-gray" style={{ marginBottom: '12px' }}>1 Litre</p>
                
                <div className="flex justify-between items-center" style={{ marginBottom: '16px' }}>
-                  <span className="font-bold text-primary text-base">$4.50</span>
+                  <span className="font-bold text-primary text-base">₹4.50</span>
                   <div className="flex items-center" style={{ backgroundColor: '#f0f6fc', borderRadius: '8px', padding: '4px' }}>
                     <button style={{ color: '#4fa6fd', padding: '4px' }}><Minus size={14} /></button>
                     <span className="font-bold text-sm mx-2" style={{ width: '16px', textAlign: 'center' }}>1</span>
@@ -71,7 +71,7 @@ export default function Shop() {
                   </div>
                </div>
 
-               <button className="btn-primary w-full text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
+               <button className="btn-primary text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
                  <ShoppingCart size={16} /> Add
                </button>
              </div>
@@ -85,7 +85,7 @@ export default function Shop() {
                <p className="text-xs text-gray" style={{ marginBottom: '12px' }}>500 ml</p>
                
                <div className="flex justify-between items-center" style={{ marginBottom: '16px' }}>
-                  <span className="font-bold text-primary text-base">$2.25</span>
+                  <span className="font-bold text-primary text-base">₹2.25</span>
                   <div className="flex items-center" style={{ backgroundColor: '#f0f6fc', borderRadius: '8px', padding: '4px' }}>
                     <button style={{ color: '#4fa6fd', padding: '4px' }}><Minus size={14} /></button>
                     <span className="font-bold text-sm mx-2" style={{ width: '16px', textAlign: 'center' }}>1</span>
@@ -93,7 +93,7 @@ export default function Shop() {
                   </div>
                </div>
 
-               <button className="btn-primary w-full text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
+               <button className="btn-primary text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
                  <ShoppingCart size={16} /> Add
                </button>
              </div>
@@ -110,7 +110,7 @@ export default function Shop() {
                <p className="text-xs text-gray" style={{ marginBottom: '12px' }}>400g</p>
                
                <div className="flex justify-between items-center" style={{ marginBottom: '16px' }}>
-                  <span className="font-bold text-primary text-base">$3.10</span>
+                  <span className="font-bold text-primary text-base">₹3.10</span>
                   <div className="flex items-center" style={{ backgroundColor: '#f0f6fc', borderRadius: '8px', padding: '4px' }}>
                     <button style={{ color: '#4fa6fd', padding: '4px' }}><Minus size={14} /></button>
                     <span className="font-bold text-sm mx-2" style={{ width: '16px', textAlign: 'center' }}>1</span>
@@ -118,7 +118,7 @@ export default function Shop() {
                   </div>
                </div>
 
-               <button className="btn-primary w-full text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
+               <button className="btn-primary text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
                  <ShoppingCart size={16} /> Add
                </button>
              </div>
@@ -132,7 +132,7 @@ export default function Shop() {
                <p className="text-xs text-gray" style={{ marginBottom: '12px' }}>200g</p>
                
                <div className="flex justify-between items-center" style={{ marginBottom: '16px' }}>
-                  <span className="font-bold text-primary text-base">$5.20</span>
+                  <span className="font-bold text-primary text-base">₹5.20</span>
                   <div className="flex items-center" style={{ backgroundColor: '#f8fafc', borderRadius: '8px', padding: '4px', opacity: 0.5 }}>
                     <button style={{ color: '#94a3b8', padding: '4px' }}><Minus size={14} /></button>
                     <span className="font-bold text-sm mx-2" style={{ width: '16px', textAlign: 'center' }}>0</span>
@@ -140,7 +140,7 @@ export default function Shop() {
                   </div>
                </div>
 
-               <button className="btn-primary w-full text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
+               <button className="btn-primary text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
                  <ShoppingCart size={16} /> Add
                </button>
              </div>
@@ -154,7 +154,7 @@ export default function Shop() {
                <p className="text-xs text-gray" style={{ marginBottom: '12px' }}>500g</p>
                
                <div className="flex justify-between items-center" style={{ marginBottom: '16px' }}>
-                  <span className="font-bold text-primary text-base">$6.80</span>
+                  <span className="font-bold text-primary text-base">₹6.80</span>
                   <div className="flex items-center" style={{ backgroundColor: '#f0f6fc', borderRadius: '8px', padding: '4px' }}>
                     <button style={{ color: '#4fa6fd', padding: '4px' }}><Minus size={14} /></button>
                     <span className="font-bold text-sm mx-2" style={{ width: '16px', textAlign: 'center' }}>1</span>
@@ -162,7 +162,7 @@ export default function Shop() {
                   </div>
                </div>
 
-               <button className="btn-primary w-full text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
+               <button className="btn-primary text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
                  <ShoppingCart size={16} /> Add
                </button>
              </div>
@@ -176,7 +176,7 @@ export default function Shop() {
                <p className="text-xs text-gray" style={{ marginBottom: '12px' }}>1 Litre</p>
                
                <div className="flex justify-between items-center" style={{ marginBottom: '16px' }}>
-                  <span className="font-bold text-primary text-base">$18.00</span>
+                  <span className="font-bold text-primary text-base">₹18.00</span>
                   <div className="flex items-center" style={{ backgroundColor: '#f0f6fc', borderRadius: '8px', padding: '4px' }}>
                     <button style={{ color: '#4fa6fd', padding: '4px' }}><Minus size={14} /></button>
                     <span className="font-bold text-sm mx-2" style={{ width: '16px', textAlign: 'center' }}>1</span>
@@ -184,7 +184,7 @@ export default function Shop() {
                   </div>
                </div>
 
-               <button className="btn-primary w-full text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
+               <button className="btn-primary text-sm" style={{ padding: '10px', borderRadius: '10px' }}>
                  <ShoppingCart size={16} /> Add
                </button>
              </div>
