@@ -18,7 +18,10 @@ export default function Home() {
             <h2 className="text-lg font-bold">Good Morning, Alex!</h2>
           </div>
         </div>
-        <div style={{ width: '40px', height: '40px', backgroundColor: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--surface-shadow)', position: 'relative' }}>
+        <div 
+          onClick={() => navigate('/notifications')}
+          style={{ width: '40px', height: '40px', backgroundColor: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--surface-shadow)', position: 'relative', cursor: 'pointer' }}
+        >
           <Bell size={20} color="var(--text-dark)" />
           <div style={{ position: 'absolute', top: '10px', right: '10px', width: '8px', height: '8px', backgroundColor: '#ef4444', borderRadius: '50%', border: '2px solid white' }}></div>
         </div>

@@ -5,6 +5,12 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Subscription from './pages/Subscription';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import TrackDelivery from './pages/TrackDelivery';
+import Notifications from './pages/Notifications';
+import OrderHistory from './pages/OrderHistory';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -18,10 +24,14 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/subscription" element={<Subscription />} />
           
-          {/* Dummy routes for other bottom nav items */}
-          <Route path="/plan" element={<div className="flex justify-center items-center h-full text-gray font-bold text-xl">Orders Page Coming Soon</div>} />
-          <Route path="/cart" element={<div className="flex justify-center items-center h-full text-gray font-bold text-xl">Cart Page Coming Soon</div>} />
-          <Route path="/profile" element={<div className="flex justify-center items-center h-full text-gray font-bold text-xl">Profile Page Coming Soon</div>} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/track-delivery" element={<TrackDelivery />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/plan" element={<OrderHistory />} />
+          <Route path="/orders" element={<OrderHistory />} />
+
+          <Route path="/profile" element={<Profile />} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
