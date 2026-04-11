@@ -40,9 +40,14 @@ export default function Checkout() {
             </div>
           </div>
           <div style={{ height: '80px', borderRadius: '12px', overflow: 'hidden', position: 'relative' }}>
-            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=600&auto=format&fit=crop" alt="Map" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(255,255,255,0.7)' }}></div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Map_pin_icon.svg" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '24px', opacity: 0.8 }} />
+            <iframe 
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0rhEXLsmsi-ArbH2PA_2Sv2swIzPaap8&q=123+Maple+Street,+Springfield,+IL" 
+              style={{ width: '100%', height: '100%', border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Delivery Map"
+            ></iframe>
           </div>
         </div>
 

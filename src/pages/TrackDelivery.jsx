@@ -9,8 +9,14 @@ export default function TrackDelivery() {
 
       {/* Map Area */}
       <div style={{ position: 'relative', height: '240px', backgroundColor: '#e2e8f0' }}>
-        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Map" />
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(255,255,255,0.4)' }}></div>
+        <iframe 
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0rhEXLsmsi-ArbH2PA_2Sv2swIzPaap8&q=Springfield,IL" 
+          style={{ width: '100%', height: '100%', border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Tracking Map"
+        ></iframe>
         
         {/* Rider marker */}
         <div style={{ position: 'absolute', top: '40%', left: '45%', transform: 'translate(-50%, -50%)', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
